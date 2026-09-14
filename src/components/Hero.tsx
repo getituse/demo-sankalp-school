@@ -2,6 +2,7 @@ import { SCHOOL_DATA } from '../data/school';
 import { ArrowRight, Calendar, Users, Award, Trophy } from 'lucide-react';
 import { GreenLeafIcon } from './Icons';
 import { AnimatedCounter } from './AnimatedCounter';
+import { getAssetUrl } from '../utils/assets';
 
 interface HeroProps {
   onActionClick: (actionId: string) => void;
@@ -146,7 +147,7 @@ export const Hero = ({ onActionClick }: HeroProps) => {
             }}
           >
             <img
-              src="/images/hero-students.webp"
+              src={getAssetUrl('/images/hero-students.webp')}
               alt="Indian students in light-blue school uniforms on the Sankalp Public School campus"
               className="w-full h-full object-cover object-[center_35%] select-none pointer-events-none"
               loading="eager"

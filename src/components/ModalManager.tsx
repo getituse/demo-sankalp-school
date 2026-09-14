@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { SCHOOL_DATA } from '../data/school';
 import { X, CheckCircle2, Eye, EyeOff, Search, ChevronLeft, ChevronRight, Bus, MapPin, Clock } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 export interface ModalState {
   type:
@@ -64,27 +65,27 @@ export const ModalManager: React.FC<ModalManagerProps> = ({ modalState, onClose,
   const [galleryIndex, setGalleryIndex] = useState(0);
   const galleryImages = [
     {
-      src: '/images/campus.webp',
+      src: getAssetUrl('/images/campus.webp'),
       caption: 'Main Academic Block & Landscaped Entrance',
       subtitle: 'Smart classrooms, auditorium, and digital library wings.',
     },
     {
-      src: '/images/hero-students.webp',
+      src: getAssetUrl('/images/hero-students.webp'),
       caption: 'Central Courtyard & Assembly Plaza',
       subtitle: 'Daily student assemblies and cultural gatherings.',
     },
     {
-      src: '/images/academic-lab.webp',
+      src: getAssetUrl('/images/academic-lab.webp'),
       caption: 'Advanced STEM & Composite Science Laboratory',
       subtitle: 'Modern equipment for physics, chemistry, and biology research.',
     },
     {
-      src: '/images/student-basketball.webp',
+      src: getAssetUrl('/images/student-basketball.webp'),
       caption: 'Outdoor Sports Pavilion & Basketball Courts',
       subtitle: 'FIBA standard basketball courts, athletics track, and cricket nets.',
     },
     {
-      src: '/images/news-green-campus.webp',
+      src: getAssetUrl('/images/news-green-campus.webp'),
       caption: 'Botanical Garden & Herbal Nursery',
       subtitle: 'Student eco-club biodiversity cultivation zones.',
     },
@@ -856,7 +857,7 @@ export const ModalManager: React.FC<ModalManagerProps> = ({ modalState, onClose,
           {modalState.type === 'news-detail' && modalState.payload && (
             <div className="space-y-3">
               <img
-                src={modalState.payload.imageSrc}
+                src={getAssetUrl(modalState.payload.imageSrc)}
                 alt={modalState.payload.imageAlt}
                 className="w-full h-48 object-cover rounded-xl border border-[#E5EBF0]"
               />
@@ -914,7 +915,7 @@ export const ModalManager: React.FC<ModalManagerProps> = ({ modalState, onClose,
                   onClick={() => onOpenModal('news-detail', n)}
                   className="p-3 bg-slate-50 hover:bg-[#EDF7FE] transition-colors rounded-xl border border-[#E5EBF0] flex items-center gap-3 cursor-pointer"
                 >
-                  <img src={n.imageSrc} alt={n.imageAlt} className="w-14 h-11 object-cover rounded-lg shrink-0" />
+                  <img src={getAssetUrl(n.imageSrc)} alt={n.imageAlt} className="w-14 h-11 object-cover rounded-lg shrink-0" />
                   <div className="flex-1 min-w-0">
                     <span className="text-[10px] text-slate-400 font-medium">{n.date}</span>
                     <h5 className="font-heading-serif font-bold text-xs text-[#082959] truncate">{n.title}</h5>
@@ -931,7 +932,7 @@ export const ModalManager: React.FC<ModalManagerProps> = ({ modalState, onClose,
               <div className="p-4 bg-slate-50 rounded-xl border border-[#E5EBF0]">
                 <div className="flex items-center gap-3 mb-2">
                   <img
-                    src={SCHOOL_DATA.testimonial.avatarSrc}
+                    src={getAssetUrl(SCHOOL_DATA.testimonial.avatarSrc)}
                     alt={SCHOOL_DATA.testimonial.avatarAlt}
                     className="w-10 h-10 rounded-full object-cover"
                   />

@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/assets';
+
 export interface AssetMetadata {
   path: string;
   description: string;
@@ -9,12 +11,12 @@ export interface AssetMetadata {
 
 export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
   crest: {
-    path: '/images/school-crest.png',
+    path: getAssetUrl('/images/school-crest.png'),
     description: 'SPS gold and navy heraldic emblem with open book, torch, and wreath',
     status: 'generated',
   },
   heroStudents: {
-    path: '/images/hero-students.webp',
+    path: getAssetUrl('/images/hero-students.webp'),
     description: 'Four Indian school students in light-blue uniform and navy ties on modern campus',
     width: 1200,
     height: 800,
@@ -22,7 +24,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   academicLab: {
-    path: '/images/academic-lab.webp',
+    path: getAssetUrl('/images/academic-lab.webp'),
     description: 'Two uniformed students with a microscope in laboratory',
     width: 600,
     height: 400,
@@ -30,7 +32,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   studentBasketball: {
-    path: '/images/student-basketball.webp',
+    path: getAssetUrl('/images/student-basketball.webp'),
     description: 'Student in SPS basketball jersey on outdoor sports court',
     width: 600,
     height: 400,
@@ -38,7 +40,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   campus: {
-    path: '/images/campus.webp',
+    path: getAssetUrl('/images/campus.webp'),
     description: 'Green landscaped campus grounds and school architecture',
     width: 600,
     height: 400,
@@ -46,7 +48,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   parentPriya: {
-    path: '/images/parent-priya.webp',
+    path: getAssetUrl('/images/parent-priya.webp'),
     description: 'Circular testimonial portrait of Mrs. Priya Sharma',
     width: 200,
     height: 200,
@@ -54,7 +56,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   newsScience: {
-    path: '/images/news-science.webp',
+    path: getAssetUrl('/images/news-science.webp'),
     description: 'Students at science exhibition holding awards',
     width: 300,
     height: 200,
@@ -62,7 +64,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   newsGreenCampus: {
-    path: '/images/news-green-campus.webp',
+    path: getAssetUrl('/images/news-green-campus.webp'),
     description: 'Students planting saplings during campus green initiative',
     width: 300,
     height: 200,
@@ -70,7 +72,7 @@ export const ASSET_REGISTRY: Record<string, AssetMetadata> = {
     status: 'generated',
   },
   newsToppers: {
-    path: '/images/news-toppers.webp',
+    path: getAssetUrl('/images/news-toppers.webp'),
     description: 'Academic toppers felicitation ceremony',
     width: 300,
     height: 200,

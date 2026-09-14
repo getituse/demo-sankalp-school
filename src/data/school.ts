@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/assets';
+
 export interface NavItem {
   label: string;
   href: string;
@@ -173,7 +175,7 @@ export const SCHOOL_DATA = {
       actionLabel: 'Know More →',
       actionId: 'academic-more',
       accentColor: '#FFAF24',
-      imageSrc: '/images/academic-lab.webp',
+      imageSrc: getAssetUrl('/images/academic-lab.webp'),
       imageAlt: 'SPS students conducting science experiment using microscopes in laboratory',
       objectPosition: 'right center',
     },
@@ -185,7 +187,7 @@ export const SCHOOL_DATA = {
       actionLabel: 'Explore Life at SPS →',
       actionId: 'life-more',
       accentColor: '#28A745',
-      imageSrc: '/images/student-basketball.webp',
+      imageSrc: getAssetUrl('/images/student-basketball.webp'),
       imageAlt: 'SPS student practicing basketball on sports court',
       objectPosition: 'right center',
     },
@@ -197,7 +199,7 @@ export const SCHOOL_DATA = {
       actionLabel: 'Take a Virtual Tour →',
       actionId: 'tour-more',
       accentColor: '#008697',
-      imageSrc: '/images/campus.webp',
+      imageSrc: getAssetUrl('/images/campus.webp'),
       imageAlt: 'Green landscaped campus grounds and modern architecture of Sankalp Public School',
       objectPosition: 'right center',
     },
@@ -254,7 +256,7 @@ export const SCHOOL_DATA = {
     author: 'Mrs. Priya Sharma',
     authorRole: 'Parent of Class VIII Student',
     rating: 5,
-    avatarSrc: '/images/parent-priya.webp',
+    avatarSrc: getAssetUrl('/images/parent-priya.webp'),
     avatarAlt: 'Portrait of Mrs. Priya Sharma, smiling parent of Sankalp Public School student',
     items: [
       {
@@ -264,7 +266,7 @@ export const SCHOOL_DATA = {
         quote:
           '“Sankalp Public School has given my child not just academic knowledge, but a world of values, confidence and a sense of responsibility. We are truly grateful for the caring teachers and positive environment.”',
         rating: 5,
-        avatarSrc: '/images/parent-priya.webp',
+        avatarSrc: getAssetUrl('/images/parent-priya.webp'),
         avatarAlt: 'Portrait of Mrs. Priya Sharma, parent of Class VIII student',
       },
       {
@@ -274,7 +276,7 @@ export const SCHOOL_DATA = {
         quote:
           '“The individual attention and academic mentorship here have shaped my child’s confidence immensely. The STEM labs, robotics facilities, and sports arenas are truly second to none.”',
         rating: 5,
-        avatarSrc: '/images/parent-arvind.webp',
+        avatarSrc: getAssetUrl('/images/parent-arvind.webp'),
         avatarAlt: 'Portrait of Dr. Arvind Kumar, parent of Class X student',
       },
       {
@@ -284,7 +286,7 @@ export const SCHOOL_DATA = {
         quote:
           '“The teachers create such a nurturing, encouraging space for young minds to bloom. My daughter looks forward to school every single morning with genuine excitement.”',
         rating: 5,
-        avatarSrc: '/images/parent-sunita.webp',
+        avatarSrc: getAssetUrl('/images/parent-sunita.webp'),
         avatarAlt: 'Portrait of Mrs. Sunita Verma, parent of Class IV student',
       },
     ],
@@ -299,7 +301,7 @@ export const SCHOOL_DATA = {
         title: 'SPS students excel in Zonal Science Exhibition',
         subtitle: 'Our young innovators bring home top honours.',
         date: '12 Oct 2024',
-        imageSrc: '/images/news-science.webp',
+        imageSrc: getAssetUrl('/images/news-science.webp'),
         imageAlt: 'SPS science exhibition winners displaying trophies and certificates',
         category: 'Academics & STEM',
         fullStory:
@@ -310,7 +312,7 @@ export const SCHOOL_DATA = {
         title: 'Green Campus Initiative Launched',
         subtitle: 'Students pledge for a cleaner, greener tomorrow.',
         date: '02 Oct 2024',
-        imageSrc: '/images/news-green-campus.webp',
+        imageSrc: getAssetUrl('/images/news-green-campus.webp'),
         imageAlt: 'Students and faculty planting saplings in school garden',
         category: 'Environment',
         fullStory:
@@ -321,7 +323,7 @@ export const SCHOOL_DATA = {
         title: 'SPS Felicitates Board Toppers',
         subtitle: 'Hard work. Humility. Higher Goals.',
         date: '15 Sep 2024',
-        imageSrc: '/images/news-toppers.webp',
+        imageSrc: getAssetUrl('/images/news-toppers.webp'),
         imageAlt: 'Board exam top achievers on stage with the Principal and Director',
         category: 'Excellence',
         fullStory:

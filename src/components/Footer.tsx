@@ -1,6 +1,7 @@
 import { SCHOOL_DATA } from '../data/school';
 import { GreenLeafIcon, FacebookIcon, InstagramIcon, YoutubeIcon, LinkedinIcon } from './Icons';
 import { MapPin, Phone, Mail, ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface FooterProps {
   onActionClick: (actionId: string) => void;
@@ -22,7 +23,7 @@ export const Footer = ({ onActionClick }: FooterProps) => {
           <div className="flex flex-col gap-3.5">
             <div className="flex items-center gap-3">
               <img
-                src="/images/school-crest.png"
+                src={getAssetUrl('/images/school-crest.png')}
                 alt="Sankalp Public School Crest"
                 className="w-14 h-14 object-contain shrink-0 bg-white/5 rounded-full p-1 border border-white/20"
               />

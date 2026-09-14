@@ -1,5 +1,6 @@
 import { SCHOOL_DATA } from '../data/school';
 import { ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface FeatureCardsProps {
   onActionClick: (actionId: string) => void;
@@ -23,7 +24,7 @@ export const FeatureCards = ({ onActionClick }: FeatureCardsProps) => {
               {/* Background Photograph (Positioned Right) */}
               <div className="absolute inset-y-0 right-0 w-[55%] sm:w-[50%] overflow-hidden pointer-events-none">
                 <img
-                  src={feature.imageSrc}
+                  src={getAssetUrl(feature.imageSrc)}
                   alt={feature.imageAlt}
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                   style={{ objectPosition: feature.objectPosition }}

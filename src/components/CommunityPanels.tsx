@@ -1,6 +1,7 @@
 import { SCHOOL_DATA } from '../data/school';
 import { Calendar, Quote, Newspaper, ArrowRight } from 'lucide-react';
 import { StarRating } from './Icons';
+import { getAssetUrl } from '../utils/assets';
 
 interface CommunityPanelsProps {
   onActionClick: (actionId: string, payload?: any) => void;
@@ -115,7 +116,7 @@ export const CommunityPanels = ({ onActionClick }: CommunityPanelsProps) => {
                 >
                   <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
                     <img
-                      src={newsItem.imageSrc}
+                      src={getAssetUrl(newsItem.imageSrc)}
                       alt={newsItem.imageAlt}
                       className="w-12 h-9 rounded-md object-cover shrink-0 border border-slate-200 shadow-2xs"
                     />
@@ -171,7 +172,7 @@ export const CommunityPanels = ({ onActionClick }: CommunityPanelsProps) => {
                   <div className="flex items-center justify-between gap-3 mb-2.5">
                     <div className="flex items-center gap-3">
                       <img
-                        src={item.avatarSrc}
+                        src={getAssetUrl(item.avatarSrc)}
                         alt={item.avatarAlt}
                         className="w-11 h-11 rounded-full object-cover shrink-0 border-2 border-[#FFAF24]/40 shadow-xs"
                       />

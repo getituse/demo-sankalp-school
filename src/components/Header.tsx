@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SCHOOL_DATA } from '../data/school';
 import { Search, User, Menu, X } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 interface HeaderProps {
   onActionClick: (actionId: string) => void;
@@ -37,7 +38,7 @@ export const Header = ({ onActionClick, activeNav = 'hero' }: HeaderProps) => {
           className="flex items-center gap-2 sm:gap-3 group text-left cursor-pointer select-none min-w-0 pr-2"
         >
           <img
-            src="/images/school-crest.png"
+            src={getAssetUrl('/images/school-crest.png')}
             alt="Sankalp Public School Crest"
             className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain shrink-0"
           />
