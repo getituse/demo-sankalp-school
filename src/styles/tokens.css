@@ -1,0 +1,55 @@
+:root {
+  /* Brand Navy Spectrum */
+  --color-navy-announcement: #143C65;
+  --color-navy-footer: #0C3055;
+  --color-navy-heading: #082959;
+  --color-navy-dark: #061F42;
+
+  /* Accent Colors */
+  --color-teal: #008697;
+  --color-teal-hover: #006E7D;
+  --color-teal-light: #E0F5F8;
+  --color-orange-gold: #FFAF24;
+  --color-orange-gold-hover: #E89B15;
+  --color-orange-light: #FFF6E5;
+
+  /* Neutral & Background Surfaces */
+  --color-cream: #FEF9F1;
+  --color-surface-white: #FFFFFF;
+  --color-surface-muted: #F8FAFC;
+  --color-text-body: #485469;
+  --color-text-muted: #64748B;
+  --color-border-light: #E5EBF0;
+  --color-border-subtle: #F1F5F9;
+
+  /* Shortcut Pastels */
+  --color-tint-admission: #EDF9F7;
+  --color-tint-admission-accent: #008697;
+  --color-tint-portal: #EDF7FE;
+  --color-tint-portal-accent: #1A6AB2;
+  --color-tint-payment: #FEF5F0;
+  --color-tint-payment-accent: #E65D24;
+  --color-tint-bus: #EAF9F0;
+  --color-tint-bus-accent: #2B8A46;
+
+  /* Typography Stacks */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  /* Desktop Reference Geometry (1586px reference width) */
+  --desktop-ref-width: 1586px;
+  --desktop-ref-height: 992px;
+  --announcement-height: 30px;
+  --header-height: 68px;
+  --hero-height: 348px;
+  --shortcuts-height: 84px;
+  --features-height: 168px;
+  --community-height: 155px;
+  --footer-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
